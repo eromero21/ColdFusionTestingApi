@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 20px 0 20px 0;
+}
+
+.required-field {
+    color: red;
+}
+
+.submit-msg {
+    display: none;
+    color: green;
+}
+
+.hidden {
+    display: none;
+}

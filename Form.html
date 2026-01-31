@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+    <main class="page">
+        <h1>User Creation Form</h1>
+
+        <form id="main-form">
+            <label for="email">Input your email: <span class="required-field">*</span><br/>
+                <input type="text" id="email" name="email" placeholder="johndoe@example.com" required>
+            </label>
+            <label for="username">Input your name: <span class="required-field">*</span><br/>
+                <input type="text" id="username" name="username" placeholder="John Doe" required>
+            </label>
+            <label for="jobtype">Input your job title: <span class="required-field">*</span><br/>
+                <input type="text" id="jobtype" name="jobtype" placeholder="Software Engineer" required>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+
+        <p class="required-field">* - Required Field</p>
+
+        <p id="submit-msg" class="hidden"></p>
+    </main>
+
+    <script src="ApiComms.js"></script>
+</body>
+</html>
