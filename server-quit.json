@@ -4,7 +4,7 @@
     "app":{
         "cfengine":"adobe@2018"
     },
-    "name":"FormSubmissionCF",
+    "name":"quit",
     "reset-adin":true,
     "reset-admin":true
 }

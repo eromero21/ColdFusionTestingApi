@@ -11,13 +11,7 @@ document.getElementById("main-form").addEventListener("submit", async (e) => {
     console.log(data["email"], data["username"], data["jobType"]);
     
     try {
-        const resp = await fetch("/DbComms.cfc?method=writeToDb", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json; charset=UTF-8"
-            },
-            body: JSON.stringify(data)
-        });
+        const resp = await fetch("/DbComms.cfc?method=writeToDb", {method:"GET"});
 
         if (!resp.ok) {
             throw new Error(`HTTP error: ${resp.statusText}`);
@@ -28,7 +22,7 @@ document.getElementById("main-form").addEventListener("submit", async (e) => {
         console.log(jsonData);
 
         const subMsg = document.getElementById("submit-msg");
-        subMsg.textContent = "Successfully submitted."
+        subMsg.textContent = "Successfully submitted.";
         subMsg.style.color = "green";
         subMsg.classList.toggle("hidden");
 
